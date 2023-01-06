@@ -1,0 +1,31 @@
+.sidebar {
+    --primary-light-color: #34aaf1;
+    --primary-dark-color: #fe0c47;
+    --font-primary-color: #fff;
+    --font-secondary-color: #fff;
+    --transition-speed: 400ms;
+    --transition-delay: 200ms;
+    width: 120px;
+    height: 100%;
+    background-color: rgba(10, 10, 10, .25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px rgb(2, 4, 24);
+    border-right: 2px solid rgba(255, 255, 255, .09);
+    transition: width var(--transition-speed) ease-in-out;
+}
+
+.sidebar[aria-expanded='true'] {
+    width: 360px;
+}
+
+/* Dark Mode */
+/* @media (prefers-color-scheme: dark) {
+    .sidebar {
+        background-color: rgba(10, 10, 10, .65);
+    }
+} */
+
+body[dark-mode='true'] .sidebar {
+    background-color: rgba(10, 10, 10, .65);
+}
