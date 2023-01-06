@@ -1,14 +1,16 @@
 import { Box } from '@mui/material'
 import Header from '../../../components/Header'
+import PieChart from '../../../components/charts/pieChart'
 
-const Dashboard = () => {
+const Pie = () => {
   return (
     <Box m='20px'>
-      <Box display='flex' justifyContent='space-between' alignItems='center'>
-        <Header title='Dashboard' subtitle='Welcome to your Dashboard' />
+      <Header title='PieChart' subtitle='Simple Pie Chart' />
+      <Box height='75vh'>
+        <PieChart />
       </Box>
     </Box>
   )
 }
 
-export default Dashboard
+export default Pie

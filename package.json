@@ -24,6 +24,7 @@
     "@nivo/core": "^0.80.0",
     "@nivo/geo": "^0.80.0",
     "@nivo/line": "^0.80.0",
+    "@nivo/pie": "^0.80.0",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "formik": "^2.2.9",
