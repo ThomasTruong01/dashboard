@@ -33,6 +33,11 @@ const pieChart = () => {
       text: {
         fill: colors.grey[100]
       }
+    },
+    tooltip: {
+      container: {
+        color: colors.grey[400]
+      }
     }
   }
   

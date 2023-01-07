@@ -4,7 +4,7 @@ import { tokens } from '../../pages/theme'
 import { mockBarData as data } from '../../data/mockData'
 
 
-const BarChart = (isDashboard = false) => {
+const BarChart = ({isDashboard = false}) => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 
@@ -33,6 +33,11 @@ const BarChart = (isDashboard = false) => {
     legends: {
       text: {
         fill: colors.grey[100]
+      }
+    },
+    tooltip: {
+      container: {
+        color: colors.grey[400]
       }
     }
   }
