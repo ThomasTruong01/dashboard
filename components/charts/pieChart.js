@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material'
 import { tokens } from '../../pages/theme'
 import { mockPieData as data } from '../../data/mockData'
 
-const PieChart = () => {
+const pieChart = () => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 
@@ -174,4 +174,4 @@ const PieChart = () => {
   )
 }
 
-export default PieChart
+export default pieChart
