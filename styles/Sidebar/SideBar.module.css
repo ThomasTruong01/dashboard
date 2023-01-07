@@ -13,6 +13,7 @@
     box-shadow: 0 8px 32px rgb(2, 4, 24);
     border-right: 2px solid rgba(255, 255, 255, .09);
     transition: width var(--transition-speed) ease-in-out;
+    position: sticky;
 }
 
 .sidebar[aria-expanded='true'] {
