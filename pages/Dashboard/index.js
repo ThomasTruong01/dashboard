@@ -9,11 +9,10 @@ import TrafficIcon from '@mui/icons-material/Traffic'
 import LineChart from '../../components/charts/lineChart'
 import BarChart from '../../components/charts/barChart'
 import GeographyChart from '../../components/charts/GeographyChart'
-import PieChart from '../../components/charts/pieChart'
 import StatsBox from '../../components/StatsBox'
 
 import Header from '../../components/Header'
-import { ProgressCircle } from '../../components/progressCircle'
+import ProgressCircle from '../../components/ProgressCircle'
 
 const Dashboard = () => {
   const theme = useTheme()

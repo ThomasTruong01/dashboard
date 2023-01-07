@@ -1,6 +1,6 @@
-import { ColorModeContext, useMode } from '../pages/theme'
+import { ColorModeContext, useMode } from '../data/theme'
 import { CssBaseline, ThemeProvider } from '@mui/material'
-import Sidebar from './global/SideBar/SideBar'
+import Sidebar from './global/SideBar/Sidebar'
 import Topbar from './global/Topbar'
 
 const Layout = ({ children }) => {

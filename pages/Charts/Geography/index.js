@@ -2,7 +2,7 @@ import { Box } from '@mui/material'
 import Header from '../../../components/Header'
 import GeoChart from '../../../components/charts/GeographyChart'
 import { useTheme } from '@mui/material'
-import { tokens } from '../../theme'
+import { tokens } from '../../../data/theme'
 
 
 const Dashboard = () => {
