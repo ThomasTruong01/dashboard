@@ -12,7 +12,7 @@ import GeographyChart from '../../components/charts/GeographyChart'
 import StatsBox from '../../components/StatsBox'
 
 import Header from '../../components/Header'
-import ProgressCircle from '../../components/progressCircle'
+import ProgressCircle from '../../components/ProgressCircle'
 
 const Dashboard = () => {
   const theme = useTheme()
