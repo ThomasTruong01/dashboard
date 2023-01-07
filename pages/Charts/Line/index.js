@@ -1,14 +1,21 @@
 import { Box } from '@mui/material'
 import Header from '../../../components/Header'
+import LineChart from '../../../components/charts/lineChart'
 
-const Dashboard = () => {
+const Line = () => {
   return (
     <Box m='20px'>
-      <Box display='flex' justifyContent='space-between' alignItems='center'>
-        <Header title='Dashboard' subtitle='Welcome to your Dashboard' />
+      <Header title='Line Chart' subtitle='Simple Line Chart' />
+      <Box
+        height='75vh'
+        display='flex'
+        justifyContent='space-between'
+        alignItems='center'
+      >
+        <LineChart />
       </Box>
     </Box>
   )
 }
 
-export default Dashboard
+export default Line
