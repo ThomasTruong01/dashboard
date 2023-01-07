@@ -1,6 +1,6 @@
 import { ResponsivePie } from '@nivo/pie'
 import { useTheme } from '@mui/material'
-import { tokens } from '../../pages/theme'
+import { tokens } from '../../data/theme'
 import { mockPieData as data } from '../../data/mockData'
 
 const PieChart = () => {
