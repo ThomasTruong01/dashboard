@@ -1,7 +1,7 @@
 import { Box, useTheme } from "@mui/material";
 import { tokens } from "../data/theme";
 
-export const ProgressCircle = ({progress= '0.75', size = '40' }) => {
+const ProgressCircle = ({progress= '0.75', size = '40' }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode)
 
@@ -18,3 +18,4 @@ export const ProgressCircle = ({progress= '0.75', size = '40' }) => {
         }}></Box>
     )
 }
+export default ProgressCircle
