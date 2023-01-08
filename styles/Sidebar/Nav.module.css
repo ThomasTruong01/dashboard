@@ -1,5 +1,7 @@
 .nav {
     padding: 0 2em;
+    overflow: hidden;
+    margin-bottom: 5em;
 }
 
 .nav_title {

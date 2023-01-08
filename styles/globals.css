@@ -13,11 +13,15 @@ a {
 }
 #__next{
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(10%, 1fr);
   flex-direction: row;
   width: 100%;
   gap: 2em;
 }
+/* .SideBar_sidebar__AmkjL[aria-expanded='true'] + .Home_Content__o1xaS{
+  margin-left: 320px;
+    width: calc( 100vw - 320px );
+} */
 * {
   box-sizing: border-box;
 }
