@@ -20,18 +20,6 @@
 .sidebar[aria-expanded='true'] {
     width: 300px;
 }
-.sidebar[aria-expanded='true'] + .Content {
-    margin-left: 320px;
-    width: calc( 100vw - 320px );
-  }
-  
-/* Dark Mode */
-/* @media (prefers-color-scheme: dark) {
-    .sidebar {
-        background-color: rgba(10, 10, 10, .65);
-    }
-} */
-
-body[dark-mode='true'] .sidebar {
-    background-color: rgba(10, 10, 10, .65);
+.sidebar[aria-expanded='false'] {
+    height: 100vh;
 }
