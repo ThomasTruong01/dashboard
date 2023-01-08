@@ -1,15 +1,10 @@
-import { Box, Button, IconButton, Typography, useTheme } from '@mui/material'
-import { tokens } from '../../data/theme'
-
+import { Box, useTheme } from '@mui/material'
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale'
 import PersonAddIcon from '@mui/icons-material/PersonAdd'
 import TrafficIcon from '@mui/icons-material/Traffic'
-import BarChart from '../../components/charts/barChart'
-import GeographyChart from '../../components/charts/GeographyChart'
+import { tokens } from '../../data/theme'
 import Summary from '../../components/dashboard/Summary'
-
 import Header from '../../components/Header'
-import ProgressCircle from '../../components/ProgressCircle'
 import RevenueGenerated from '../../components/dashboard/RevenueGenerated'
 import RecentTransactions from '../../components/dashboard/RecentTransactions'
 import DownloadReports from '../../components/dashboard/DownloadReports'
@@ -34,6 +29,7 @@ const Dashboard = () => {
         gap='2em'
         mt='2em'
       >
+        
         {/* Row 1 */}
         <Summary
           title='12,361'
@@ -79,12 +75,13 @@ const Dashboard = () => {
             />
           }
         />
+
         {/* Row 2 */}
         <RevenueGenerated />
         <RecentTransactions />
+
         {/* Row 3 */}
         <Campagin />
-
         <SalesQuantity />
         <Geography />
       </Box>
