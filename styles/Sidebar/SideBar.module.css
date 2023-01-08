@@ -20,6 +20,7 @@
 .sidebar[aria-expanded='true'] {
     width: 300px;
     min-width: 280px;
+    position: fixed;
 }
 .sidebar[aria-expanded='false'] {
     height: 100vh;
@@ -28,6 +29,11 @@
 .sidebar[aria-expanded='false'] + div {
     margin-left: 140px;
     width: calc( 100vw - 140px );
+    transition: 500ms ease;
+}
+.sidebar[aria-expanded='true'] + div {
+    margin-left: 300px;
+    width: calc( 100vw - 300px );
 }
 .sidebar + div {
     width: 100%;
