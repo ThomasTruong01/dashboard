@@ -30,9 +30,9 @@ a {
   box-sizing: border-box;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
-} */
+}
 
 /* Track */
 ::-webkit-scrollbar-track{
