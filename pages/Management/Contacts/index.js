@@ -28,7 +28,7 @@ const Contacts = () => {
     { field: 'email', headerName: 'Email', flex: 1 },
     { field: 'address', headerName: 'Address', flex: 1 },
     { field: 'city', headerName: 'City', flex: 1 },
-    { field: 'zipcode', headerName: 'Zip Code', flex: 1 }
+    // { field: 'zipcode', headerName: 'Zip Code', flex: 1 }
   ]
 
   return (
