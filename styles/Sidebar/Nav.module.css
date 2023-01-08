@@ -1,7 +1,10 @@
 .nav {
+    position: fixed;
     padding: 0 2em;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-bottom: 5em;
+    max-height: calc(100vh - 202px - 20px);
+    height: calc(100vh - 202px - 20px);
 }
 
 .nav_title {

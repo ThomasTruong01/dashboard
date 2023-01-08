@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Sidebar className={styles.Sidebar} />
-        <div className={styles.Content}>
+        <div className={styles.Main}>
           <Topbar />
           {children}
         </div>

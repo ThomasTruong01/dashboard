@@ -6,7 +6,7 @@
     --transition-speed: 400ms;
     --transition-delay: 200ms;
     width: 120px;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(10, 10, 10, .25);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -18,8 +18,16 @@
 }
 
 .sidebar[aria-expanded='true'] {
-    width: 300px;
+    width: 340px;
 }
 .sidebar[aria-expanded='false'] {
     height: 100vh;
+    position: fixed;
+}
+.sidebar[aria-expanded='false'] + div {
+    margin-left: 140px;
+    width: calc( 100vw - 140px );
+}
+.sidebar + div {
+    width: 100%;
 }
