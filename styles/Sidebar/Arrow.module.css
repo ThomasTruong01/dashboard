@@ -1,7 +1,7 @@
 /* Nav button position */
 .nav__button {
     position: absolute;
-    top: 180px;
+    top: 125px;
     right: -20px;
     cursor: pointer;
 }

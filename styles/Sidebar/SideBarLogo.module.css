@@ -2,7 +2,7 @@
     --button-color: #fff;
     --transition-speed: 500ms;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     padding: 20px 0 0;
     display: grid;
     align-items: center;
@@ -47,12 +47,13 @@ body[dark-mode='true'] .circle1{
 }
 .logo[aria-expanded='true'] svg {
     width: 96px;
-    transition: 0;
+    transition: 1s;
 }
 .logo h3 {
     color: var(--font-primary-color);
     font-size: 10px;
     margin-top: 12px;
+    margin-bottom: 0;
     font-variant: small-caps;
     pointer-events: none;
     opacity: 0;
