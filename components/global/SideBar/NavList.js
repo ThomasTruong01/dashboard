@@ -1,15 +1,14 @@
 import styles from '../../../styles/Sidebar/Nav.module.css'
 import NavItems from './NavItems'
 
-const NavList = ({ navParam, active, setActive }) => {
-  const navItems = navParam.items
+const NavList = ({ title, items }) => {
 
   return (
     <>
-      <div className={styles.nav_title}>{navParam.title}</div>
+      <div className={styles.nav_title}>{title}</div>
       <ul className={styles.list}>
-        {navItems.map((item, idx) => {
-          return <NavItems key={idx} item={item} active={active} setActive={setActive} />
+        {items.map(({ to, icon, title}, idx) => {
+          return <NavItems key={idx} to={to} icon={icon} title={title} />
         })}
       </ul>
     </>
