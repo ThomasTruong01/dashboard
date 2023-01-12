@@ -100,33 +100,13 @@ const navParams = [
 
 
 const Nav = ({ Expand }) => {
-  const [active, setActive] = useState('Dashboard')
-
-  const addEventListener = () => {
-    const navItems = document.querySelectorAll(`.${styles.nav_items}`)
-  
-    navItems.forEach(navItem => {
-      navItem.addEventListener('click', () => {
-        const title = 'Dashboard';
-        
-        navItems.forEach(navItem => {
-          navItem.classList.remove(`${styles.active}`)
-        })
-        navItem.classList.add(`${styles.active}`)
-      })
-    })
-  }
-
-  useEffect(() => {
-    addEventListener()
-  }, [])
 
   return (
     <nav className={styles.nav} aria-expanded={Expand}>
-      {navParams.map((item, idx) => {
+      {navParams.map(({title, items}, idx) => {
         return (
           <Fragment key={idx}>
-            <NavList navParam={item} active={active} setAtive={setActive} />
+            <NavList title={title} items={items} />
             {idx + 1 !== navParams.length ? <hr /> : null}
           </Fragment>
         )
